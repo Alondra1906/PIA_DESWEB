@@ -1,12 +1,104 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Don Mueble</title>
+    <title>Don Mueble - Inicio</title>
+    <link rel="stylesheet" href= "{% static "css/estilosindex.css" %}">
 </head>
 <body>
-    <h1>Don Mueble :)</h1>
-    <!-- hola confirmacion-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Don<span> Mueble</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{% url 'index' %}" class="active">Inicio</a></li>
+                    <li><a href="{% url 'clientes' %}">Clientes</a></li>
+                    <li><a href="{% url 'productos' %}">Productos</a></li>
+                    <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+                    <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-products">
+        <div class="hero-content">
+            <h2>Bienvenido a Don Mueble</h2>
+            <p>Diseñamos tu espacio de trabajo ideal</p>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Lo que ofrecemos</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Diseño personalizado">
+                    </div>
+                    <div class="product-info">
+                        <h3>Diseño Personalizado</h3>
+                        <p>Nos adaptamos a tus necesidades para crear espacios únicos y funcionales.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/8134760/pexels-photo-8134760.jpeg" alt="Calidad garantizada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Calidad Garantizada</h3>
+                        <p>Trabajamos con materiales de alta resistencia y acabado profesional.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg" alt="Atención personalizada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Atención Personalizada</h3>
+                        <p>Nuestro equipo está listo para acompañarte en todo momento.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Don Mueble</h3>
+                    <p>Soluciones para tu espacio de trabajo</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Universidad 629, Ciudad Universitaria</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> donmueble@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Don Mueble. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
 </body>
 </html>
