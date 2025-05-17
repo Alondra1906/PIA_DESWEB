@@ -1,12 +1,35 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
-    <link rel="stylesheet" href="/website_pia/static/estilonosotros.css">
+    <link rel="stylesheet" href= "{% static "css/estilosindex.css" %}">
+    <link rel="stylesheet" href= "{% static "css/estilonosotros.css" %}">
+
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Don<span> Mueble</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{% url 'index' %}" class="active">Inicio</a></li>
+                    <li><a href="{% url 'clientes' %}">Clientes</a></li>
+                    <li><a href="{% url 'productos' %}">Productos</a></li>
+                    <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+                    <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
     <h1>Quienes Somos? </h1>
 
     <p class="titulo"><b>Nuestra Empresa</b> diseñamos y fabricamos muebles</p>
@@ -20,8 +43,37 @@
         <p>Brindamos soluciones en mobiliario con innovación, calidad y servicio; mediante la asesoría de un equipo profesional, proactivo y con la experiencia de generaciones que inspiran confianza</p>
         <img style="width: 500px; border-radius: 40px;" src="https://officeclass.com/wp-content/uploads/2023/11/z-chrome-mesa-de-consejo-1-1-1024x683.jpg" alt="mision">
     </div>
+    <p style="font-size: 60px; padding-left: 400px;"><b>Vision</b></p>
     <div class="vision">
-
+        <p>Transformar espacios que te impulsan al éxito.</p>
+        <img style="width: 500px; border-radius: 40px;" src="https://officeclass.com/wp-content/uploads/2023/11/a-white-1-1-1024x683.jpg" alt="vision">
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Don Mueble</h3>
+                    <p>Soluciones para tu espacio de trabajo</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Universidad 629, Ciudad Universitaria</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> donmueble@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Don Mueble. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
 </body>
 </html>

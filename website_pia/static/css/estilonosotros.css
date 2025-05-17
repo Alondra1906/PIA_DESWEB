@@ -31,3 +31,10 @@ img {
     padding-right: 400px;
 }
 
+.vision {
+    display: flex;
+    text-align: center;
+    padding-right: 300px;
+    padding-left: 400px;
+}
+
