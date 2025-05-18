@@ -15,3 +15,6 @@ def nosotros(request):
 
 def clientes(request):
     return render(request, 'clientes.html')
+
+def clientes(request):
+    return render(request, 'sucursales.html')
