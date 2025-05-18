@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales</title>
+    <link rel="stylesheet" href="{%static 'css/estilosucursal.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Don<span> Mueble</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{% url 'index' %}" class="active">Inicio</a></li>
+                    <li><a href="{% url 'clientes' %}">Clientes</a></li>
+                    <li><a href="{% url 'productos' %}">Productos</a></li>
+                    <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+                    <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                    <li><a href="{% url 'sucursales' %}">Sucursales</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="title">En nuestra empresa contamos con 4 sucursales </h1>
+
+    <div>
+        <h2 class="sucursal">San Jerónimo</h2>
+        <p>Av. San Jerónimo 552-A Col. San Jerónimo Monterrey, N.L.</p>
+        <p>(81) 3145-1805</p>
+    </div>
+    
+    <div>
+        <h2 class="sucursal">Centrito Valle</h2>
+        <p>Rio Mississipi Local 202 y 204 Centrito Valle Col. Del Valle San Pedro Garza Garcia, N.L.</p>
+        <p>(81) 8387-1511</p>
+        <p>(81) 8387-4552</p>
+    </div>
+
+    <div>
+        <h2 class="sucursal">Garza Sada</h2>
+        <p>Plaza Comercial Tenek Garza Sada 2252, Col. Roma Monterrey, N.L. Planta Baja Local 1 y 2.</p>
+        <p>(81) 4444-2852</p>
+        <p>(81) 8347-2151</p>
+    </div>
+    
+    <div>
+        <h2 class="sucursal">Roma Sur</h2>
+        <p>Av. Baja California #118 Col. Roma Sur, México, CDMX .C.P 06760</p>
+        <p>(55) 6719-1234</p>
+        <p>(55) 6719-1245</p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Don Mueble</h3>
+                    <p>Soluciones para tu espacio de trabajo</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Universidad 629, Ciudad Universitaria</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> donmueble@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Don Mueble. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
